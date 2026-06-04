@@ -89,6 +89,7 @@ a {
     font-size: 0.95rem;
     cursor: pointer;
     border: none;
+    font-family: 'Inter', sans-serif;
 }
 
 .btn-primary {
@@ -130,6 +131,90 @@ a {
 .metric span:last-child {
     color: #60a5fa;
     font-weight: 600;
+}
+
+/* ---- SECCIONES EXTRAS (MAPA Y FORMULARIO) ---- */
+
+.ubicacion, .sugerencias {
+    padding: 80px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.seccion-titulo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.seccion-titulo h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.seccion-titulo p {
+    color: #94a3b8;
+    font-size: 1rem;
+}
+
+/* Mapa */
+.mapa-box {
+    background: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 24px;
+    padding: 16px;
+    overflow: hidden;
+}
+
+.mapa-box iframe {
+    display: block;
+    border-radius: 12px;
+}
+
+/* Formulario */
+.form-box {
+    background: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 24px;
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    background: #020617;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 16px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    resize: vertical;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+}
+
+.form-box button {
+    width: 100%;
+    margin-top: 10px;
 }
 
 /* ---- NIVELES ---- */
@@ -325,15 +410,25 @@ a {
         font-size: 2rem;
     }
 
-    .titulo h1 {
-        font-size: 2rem;
+    .titulo h1,
+    .seccion-titulo h2 {
+        font-size: 1.8rem;
     }
 
     .top-bar {
         flex-direction: column;
     }
 
-    .juego-box {
+    .juego-box,
+    .form-box {
         padding: 24px;
+    }
+    
+    .mapa-box {
+        padding: 8px;
+    }
+
+    .mapa-box iframe {
+        height: 300px;
     }
 }
