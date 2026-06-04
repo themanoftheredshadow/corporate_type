@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #020617;
+    color: #e2e8f0;
+}
+
+/* ---- GENERAL ---- */
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ---- HEADER ---- */
+
+.header {
+    padding: 28px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #e2e8f0;
+}
+
+/* ---- HERO ---- */
+
+.hero {
+    min-height: calc(100vh - 85px);
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(37, 99, 235, 0.15);
+    color: #60a5fa;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-bottom: 24px;
+}
+
+.hero-texto h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-texto p {
+    color: #94a3b8;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 36px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.hero-card {
+    background: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 20px;
+    padding: 36px;
+}
+
+.hero-card h3 {
+    font-size: 1rem;
+    color: #94a3b8;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.metric {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.95rem;
+}
+
+.metric:last-child {
+    border-bottom: none;
+}
+
+.metric span:last-child {
+    color: #60a5fa;
+    font-weight: 600;
+}
+
+/* ---- NIVELES ---- */
+
+.niveles {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.titulo h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.titulo p {
+    color: #94a3b8;
+    font-size: 1rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.nivel-card {
+    background: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 20px;
+    padding: 36px;
+    text-align: center;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.nivel-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(96, 165, 250, 0.25);
+}
+
+.nivel-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.nivel-card p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.nivel-card button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.nivel-card button:hover {
+    background: #1d4ed8;
+}
+
+/* ---- JUEGO ---- */
+
+.juego {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.juego-box {
+    background: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 24px;
+    padding: 44px;
+    width: 100%;
+}
+
+.top-bar {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 36px;
+}
+
+.stat {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 14px 20px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+.stat span {
+    color: #60a5fa;
+    font-weight: 700;
+}
+
+/* ---- DISPLAY DE FRASES ---- */
+
+#texto {
+    background: #020617;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 30px;
+    border-radius: 16px;
+    line-height: 2;
+    font-size: 1.15rem;
+    margin-bottom: 24px;
+    color: #cbd5e1;
+    min-height: 150px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+/* ---- FEEDBACK LETRA A LETRA ---- */
+
+.letra {
+    display: inline;
+}
+
+.letra-ok {
+    color: #51fc2f;
+}
+
+.letra-error {
+    color: #f87171;
+    background: rgba(248, 113, 113, 0.15);
+    border-radius: 2px;
+}
+
+.letra-cursor {
+    border-bottom: 2px solid #60a5fa;
+}
+
+/* ---- INPUT ---- */
+
+#input {
+    width: 100%;
+    background: #020617;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 18px 22px;
+    color: white;
+    outline: none;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+#input:focus {
+    border-color: #2563eb;
+}
+
+/* ---- RESPONSIVE ---- */
+
+@media (max-width: 900px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-texto {
+        text-align: center;
+    }
+
+    .hero-texto h1 {
+        font-size: 2.6rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-texto h1 {
+        font-size: 2rem;
+    }
+
+    .titulo h1 {
+        font-size: 2rem;
+    }
+
+    .top-bar {
+        flex-direction: column;
+    }
+
+    .juego-box {
+        padding: 24px;
+    }
+}

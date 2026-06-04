@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de niveles</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <section class="niveles">
+        <div class="contenedor">
+
+            <div class="titulo">
+                <h1>Selecciona un nivel</h1>
+                <p>Elige la dificultad que mejor se adapte a ti.</p>
+            </div>
+
+            <div class="cards">
+
+                <div class="nivel-card">
+                    <h2>Básico</h2>
+                    <p>Frases simples y cortas.</p>
+                    <button onclick="seleccionarNivel('basico')">Empezar</button>
+                </div>
+
+                <div class="nivel-card">
+                    <h2>Intermedio</h2>
+                    <p>Frases más largas y puntuación.</p>
+                    <button onclick="seleccionarNivel('intermedio')">Empezar</button>
+                </div>
+
+                <div class="nivel-card">
+                    <h2>Profesional</h2>
+                    <p>Textos complejos y rápidos.</p>
+                    <button onclick="seleccionarNivel('pro')">Empezar</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="../js/niveles.js"></script>
+
+</body>
+
+</html>
