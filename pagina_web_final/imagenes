@@ -1,0 +1,7 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="80" height="80" rx="15" ry="15" 
+        style="fill:#0f172a; stroke:#60a5fa; stroke-width:4;" />
+  
+  <text x="50" y="60" font-family="Arial, sans-serif" font-size="28" 
+        font-weight="bold" fill="#e2e8f0" text-anchor="middle">CorT</text>
+</svg>
